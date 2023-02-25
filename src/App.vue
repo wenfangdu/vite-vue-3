@@ -14,6 +14,11 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
+
+      <!-- two problems -->
+      <!-- 1. no intellisense for v-loading -->
+      <!-- 2. syntax highlighting is broken for v-loading -->
+      <el-table v-loading="false"></el-table>
     </div>
   </header>
 
