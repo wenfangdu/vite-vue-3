@@ -1,7 +1,10 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   msg: string
+  onEvent(): void
 }>()
+
+console.log(props)
 </script>
 
 <template>
