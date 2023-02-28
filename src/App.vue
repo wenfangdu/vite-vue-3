@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+interface A {
+  onChange(): void
+}
+
+const a: A = {
+  on
+}
 </script>
 
 <template>
