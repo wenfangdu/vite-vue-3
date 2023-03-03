@@ -1,6 +1,20 @@
 <script setup lang="ts">
+import { reactive } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+interface A {
+  a: string
+}
+const a1: A = {
+  a: 'a',
+  b: '' // 👈 thrown
+}
+const a2: A = reactive({
+  a: 'a',
+  b: '' // 👈 not thrown
+})
+console.log(a1, a2)
 </script>
 
 <template>
