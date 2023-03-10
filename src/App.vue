@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+const arr = [1, 2, 3]
 </script>
 
 <template>
   <header>
+    <template v-for="(x, i) in arr" :key="i">{{ x }}</template>
+
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
