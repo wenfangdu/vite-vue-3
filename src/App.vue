@@ -1,10 +1,9 @@
-<script lang="ts">
-  export type A = string
-</script>
-
 <script setup lang="ts">
   import { RouterLink, RouterView } from 'vue-router'
   import HelloWorld from './components/HelloWorld.vue'
+
+  export type A = string
+  export const a = 1
 </script>
 
 <template>
