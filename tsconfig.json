@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "noImplicitAny": false,
+    "experimentalDecorators": true,
     "paths": {
       "@/*": ["./src/*"]
     }

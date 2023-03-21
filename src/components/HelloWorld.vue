@@ -1,6 +1,8 @@
 <script setup lang="ts">
+  import type { Foo } from '@/type'
+
   defineProps<{
-    msg: string
+    msg: Foo
   }>()
 </script>
 
