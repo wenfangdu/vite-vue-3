@@ -13,12 +13,14 @@
   },
   "dependencies": {
     "element-plus": "^2.2.32",
+    "lodash-es": "^4.17.21",
     "pinia": "^2.0.32",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
+    "@types/lodash-es": "^4.17.7",
     "@types/node": "^18.14.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
