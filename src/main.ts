@@ -12,3 +12,9 @@ app.use(createPinia())
 app.use(router)
 
 app.mount('#app')
+
+import { sample } from 'lodash-es'
+
+const a = sample([1]) // 👈 this can't be `undefined` even though `strictNullChecks` is on
+
+console.log(+a)
