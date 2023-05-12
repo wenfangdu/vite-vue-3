@@ -23,14 +23,5 @@ module.exports = {
           },
         ]
       : 'off',
-    'vue/no-restricted-syntax': production
-      ? [
-          'error',
-          {
-            selector: '[name=console]',
-            message: 'Unexpected console statement.',
-          },
-        ]
-      : 'off',
   },
 }
