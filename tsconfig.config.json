@@ -3,6 +3,7 @@
   "compilerOptions": {
     "composite": true,
     "types": ["node"],
-    "module": "esnext"
+    "module": "esnext",
+    "moduleResolution": "nodenext"
   }
 }
