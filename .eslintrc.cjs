@@ -15,6 +15,7 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
+    '@typescript-eslint/prefer-optional-chain': 'error',
     'no-console': production
       ? [
           'error',
