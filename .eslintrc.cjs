@@ -13,6 +13,7 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest',
+    warnOnUnsupportedTypeScriptVersion: false,
   },
   rules: {
     'no-console': production
