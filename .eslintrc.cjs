@@ -1,8 +1,6 @@
 /* eslint-env node */
 require('@rushstack/eslint-patch/modern-module-resolution')
 
-const production = process.env.NODE_ENV === 'production'
-
 module.exports = {
   root: true,
   extends: [
@@ -15,13 +13,11 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
-    'no-console': production
-      ? [
-          'error',
-          {
-            allow: ['warn', 'error'],
-          },
-        ]
-      : 'off',
+    'vue/no-console': [
+      'error',
+      {
+        allow: ['warn', 'error'],
+      },
+    ],
   },
 }

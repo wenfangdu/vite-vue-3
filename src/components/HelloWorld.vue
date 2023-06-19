@@ -2,12 +2,14 @@
   defineProps<{
     msg: string
   }>()
+
+  console.log('called')
 </script>
 
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
+  <div class="greetings" @click="console.warn(0)">
+    <h1 class="green" @click="console.error(1)">{{ msg }}</h1>
+    <h3 @click="console.log(3)">
       You’ve successfully created a project with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a>
       +
