@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const props = defineProps<{
   msg: string
-  onEvent(): void
+  onEvent?(): void
+  onVisibleChange(): void
 }>()
 
 console.log(props)
